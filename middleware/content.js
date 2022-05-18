@@ -22,7 +22,8 @@ const userData = [
 ];
 
 module.exports.fetchUsers = (req, res, next) => {
-  res.send("data");
+  res.send(JSON.stringify(userData));
+  console.log("User Data sent");
 };
 
 module.exports.fetUserData = (req, res, next) => {
